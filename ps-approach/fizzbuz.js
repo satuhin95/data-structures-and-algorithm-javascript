@@ -1,15 +1,15 @@
 
 function  fizzBuzz(num){
-    let result ='';
+    let result =[];
     for (let index = 1; index <= num; index++) {
         if (index % 3 ===0 && index % 5 ===0) {
-            result+=' FizzBuzz \n';
+            result.push('FizzBuzz');
         } else if(index % 3 ===0 ){
-            result += ' Fizz \n'
+            result.push('Fizz');
         }else if(index % 5 ===0){
-            result += ' Buzz \n'
+            result.push('Buzz');
         }else{
-            result +=  index + '\n'
+            result.push(index.toString());
         }
         
     }
